@@ -45,17 +45,17 @@
 
   <script>
     let icons = document.querySelectorAll('i')
-    for(let i = 0;i<icons.length;i++){
-      icons[i].onclick = () =>{
+    for(let i =0;i<icons.length;i++){
+      icons[i].onclick = () => {
         if(icons[i].classList.contains('fa-square-plus')){
           icons[i].parentElement.nextElementSibling.classList.add('active')
-          icons[i].classList.remove('fa-square-plus')
           icons[i].classList.add('fa-square-minus')
+          icons[i].classList.remove('fa-square-plus')
         }
         else{
           icons[i].parentElement.nextElementSibling.classList.remove('active')
-          icons[i].classList.remove('fa-square-minus')
           icons[i].classList.add('fa-square-plus')
+          icons[i].classlist.remove('fa-square-minus')
         }
       }
     }
